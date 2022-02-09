@@ -1,10 +1,10 @@
 import {
   InformationCircleIcon,
-  ChartBarIcon,
+  // ChartBarIcon,
   SunIcon,
   MoonIcon,
-  CakeIcon,
-  AcademicCapIcon,
+  // CakeIcon,
+  // AcademicCapIcon,
 } from '@heroicons/react/outline'
 import { useState, useEffect } from 'react'
 import { Alert } from './components/alerts/Alert'
@@ -105,10 +105,12 @@ function App() {
     localStorage.setItem('theme', isDark ? 'dark' : 'light')
   }
 
+  /**
   const handleHardMode = (isHard: boolean) => {
     setIsHardMode(isHard)
     localStorage.setItem('gameMode', isHard ? 'hard' : 'normal')
   }
+   **/
 
   useEffect(() => {
     saveGameStateToLocalStorage({ guesses, solution })
