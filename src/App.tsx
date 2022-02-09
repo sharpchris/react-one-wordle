@@ -82,11 +82,13 @@ function App() {
 
   const [stats, setStats] = useState(() => loadStats())
 
+  /**
   const [isHardMode, setIsHardMode] = useState(
     localStorage.getItem('gameMode')
       ? localStorage.getItem('gameMode') === 'hard'
       : false
   )
+   **/
 
   const [isMissingPreviousLetters, setIsMissingPreviousLetters] =
     useState(false)
@@ -168,7 +170,7 @@ function App() {
       }, ALERT_TIME_MS)
     }
 
-    // enforce hard mode - all guesses must contain all previously revealed letters
+    /** enforce hard mode - all guesses must contain all previously revealed letters
     if (isHardMode) {
       const firstMissingReveal = findFirstUnusedReveal(currentGuess, guesses)
       if (firstMissingReveal) {
@@ -179,6 +181,7 @@ function App() {
         }, ALERT_TIME_MS)
       }
     }
+     **/
 
     setIsRevealing(true)
     // turn this back off after all
@@ -258,7 +261,7 @@ function App() {
           setSuccessAlert(GAME_COPIED_MESSAGE)
           return setTimeout(() => setSuccessAlert(''), ALERT_TIME_MS)
         }}
-        isHardMode={isHardMode}
+        //isHardMode={isHardMode}
       />
       <AboutModal
         isOpen={isAboutModalOpen}
