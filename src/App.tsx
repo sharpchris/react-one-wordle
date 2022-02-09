@@ -123,13 +123,13 @@ function App() {
 
         setTimeout(() => {
           setSuccessAlert('')
-          setIsStatsModalOpen(true)
+          // setIsStatsModalOpen(true)
         }, ALERT_TIME_MS)
       }, REVEAL_TIME_MS * MAX_WORD_LENGTH)
     }
     if (isGameLost) {
       setTimeout(() => {
-        setIsStatsModalOpen(true)
+        // setIsStatsModalOpen(true)
       }, GAME_LOST_INFO_DELAY)
     }
   }, [isGameWon, isGameLost])
@@ -213,17 +213,6 @@ function App() {
         <h1 className="text-xl ml-2.5 grow font-bold dark:text-white">
           {GAME_TITLE}
         </h1>
-        {isHardMode ? (
-          <AcademicCapIcon
-            className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
-            onClick={() => handleHardMode(!isHardMode)}
-          />
-        ) : (
-          <CakeIcon
-            className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
-            onClick={() => handleHardMode(!isHardMode)}
-          />
-        )}
         {isDarkMode ? (
           <SunIcon
             className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
@@ -238,10 +227,6 @@ function App() {
         <InformationCircleIcon
           className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
-        />
-        <ChartBarIcon
-          className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
-          onClick={() => setIsStatsModalOpen(true)}
         />
       </div>
       <Grid
