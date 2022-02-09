@@ -33,7 +33,7 @@ import {
   isWordInWordList,
   isWinningWord,
   solution,
-  findFirstUnusedReveal,
+  // findFirstUnusedReveal,
 } from './lib/words'
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
 import {
@@ -90,9 +90,8 @@ function App() {
   )
    **/
 
-  const [isMissingPreviousLetters, setIsMissingPreviousLetters] =
-    useState(false)
-  const [missingLetterMessage, setIsMissingLetterMessage] = useState('')
+  const [isMissingPreviousLetters] = useState(false)
+  const [missingLetterMessage] = useState('')
 
   useEffect(() => {
     if (isDarkMode) {
@@ -261,7 +260,7 @@ function App() {
           setSuccessAlert(GAME_COPIED_MESSAGE)
           return setTimeout(() => setSuccessAlert(''), ALERT_TIME_MS)
         }}
-        //isHardMode={isHardMode}
+        // isHardMode={isHardMode}
       />
       <AboutModal
         isOpen={isAboutModalOpen}
