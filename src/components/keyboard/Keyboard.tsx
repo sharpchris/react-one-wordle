@@ -74,9 +74,9 @@ export const Keyboard = ({
         ))}
       </div>
       <div className="flex justify-center">
-        <Key width={65.4} value="DELETE" onClick={onClick}>
-          {DELETE_TEXT}
-        </Key>
+      <Key width={65.4} value="ENTER" onClick={onClick}>
+          {ENTER_TEXT}
+       </Key>
         {['Z', 'X', 'C', 'V', 'B', 'N', 'M'].map((key) => (
           <Key
             value={key}
@@ -86,9 +86,9 @@ export const Keyboard = ({
             isRevealing={isRevealing}
           />
         ))}
-       <Key width={65.4} value="ENTER" onClick={onClick}>
-          {ENTER_TEXT}
-       </Key>
+        <Key width={65.4} value="DELETE" onClick={onClick}>
+          {DELETE_TEXT}
+        </Key>
       </div>
     </div>
   )

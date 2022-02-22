@@ -52,7 +52,7 @@ export const WORDS = [
   'parts',
   'young',
   'story',
-  'point',
+  'fight',
   'times',
   'heard',
   'whole',
