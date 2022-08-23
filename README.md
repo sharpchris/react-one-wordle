@@ -1,6 +1,6 @@
 # React Wordle
 
-This is a clone project of the popular word guessing game we all know and love. It has been edited to only allow one guess for a teamwork activity during University of Florida CALS Spring 2022 Teaching Retreat. Made using React, Typescript, and Tailwind.
+This is a clone project of the popular word guessing game we all know and love. It has been edited to only allow one guess for use in teamwork activities. Made using React, Typescript, and Tailwind.
 
 [**Link to the activity**](https://wordle.mistisharp.com/)
 
